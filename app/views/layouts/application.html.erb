@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <%= render 'layouts/stylesheets' %>
+
+</head>
+<body>
+<div class="container">
+	<header>
+		<%= render :partial => 'layouts/header' %>
+
+	</header>
+	<section class="content round">
+	<% flash.each do |key, value |%>
+		<div class="flash <%= key %>"> <%= value %> </div> 
+		<% end %>
+	
+		<%= yield %>
+	</section>
+	<footer>
+		<%= render 'layouts/footer' %>
+	</footer>
+</div>
+</body>
+</html>

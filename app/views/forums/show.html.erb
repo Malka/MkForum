@@ -1,0 +1,4 @@
+<%= render 'shared/path', :forum => @forum %>
+<% if @forum.forums.any? %>
+	<%= render 'forum', :forum => @forum %>
+<% end %>

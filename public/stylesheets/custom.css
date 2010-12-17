@@ -1,0 +1,194 @@
+body
+{
+	background-color: lightblue;
+}
+
+header
+{
+	padding-top: 20px;
+}
+
+section
+{
+	margin-top: 1em;
+	font-size: 120%;
+	padding:20px;
+	background:#fff;
+}
+
+table
+{
+	border: 1px solid #999;
+}
+
+nav
+{
+	float:right;
+	background-color: white;
+	padding: 0 0.7em;
+	white-space:nowrap;
+}
+
+nav ul
+{
+	margin:0;
+}
+
+nav ul li
+{
+	padding:0.2em, 0;
+	display:inline-block;
+}
+
+.container h1
+{
+	font-weight: bold;
+}
+
+nav ul li a
+{
+	padding:0 5px;
+}
+
+
+a
+{
+	color:#09c;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #069;
+	text-decoration: underline;
+}
+a:visited
+{
+	color:#069;
+}
+
+/* forms */
+
+div.field, div.actions
+{
+	margin-bottom: 10px;
+}
+
+/* end of forms */
+
+/* errors partial */
+
+.field_with_errors
+{
+	margin-top: 10px;
+	padding:2px;
+	background-color:red;
+	display:table;
+}
+.field_with_errors label
+{
+	color:white;
+}
+
+#error_explanation
+{
+	width:400px;
+	border:2px solid red;
+	padding:7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #F0F0F0;
+}
+
+#error_explanation h2
+{
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin:-7px;
+	background-color: #C00;
+	color:#FFF;
+}
+
+#error_explanation p
+{
+	color:#333;
+	margin-bottom: 0px;
+	padding:5px;
+}
+
+#error_explanation ul li
+{
+	font-size:12px;
+	list-style: square;
+}
+/* end of error partial */
+
+.container
+{
+	width:700px;
+}
+
+.round
+{
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+/* forum list */
+tr.header
+{
+	background-color: #513BDD;
+	color:white;
+	border-top-left-radius:10px;
+}
+
+tr.forum, td.forum, tr.header
+{
+	padding:0px;
+	margin:0px;
+}
+
+tr.header
+{
+	margin-top:10px;
+}
+
+th.description
+{
+	border-top-left-radius:10px;
+}
+
+th.last_post
+{
+	border-top-right-radius:10px;
+}
+
+td.description_last
+{
+	border-bottom-left-radius:10px;
+}
+td.last_post_last
+{
+	border-bottom-right-radius:10px;
+}
+
+td.description
+{
+	width:50%;
+}
+
+tr.forum td
+{
+	background-color: #9FBAF2 !important;
+}
+
+.forum tr td, .forum tr th
+{
+	border-right: 1px solid white;
+	border-bottom:1px solid #E17984;
+	padding-right:1em;
+	padding-left:1em;
+}
+
+/* end forum list */
