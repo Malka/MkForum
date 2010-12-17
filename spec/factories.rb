@@ -8,7 +8,7 @@ Factory.sequence :forum_name do |n|
 end
 
 Factory.define :thread do |thread|
-  thread.name   Factory.sequence(:thread_name)
+  thread.name   "Thread-name"
 end
 
 Factory.sequence :thread_name do |n|
