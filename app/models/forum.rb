@@ -18,7 +18,7 @@ class Forum < ActiveRecord::Base
   #relationships
   has_many :forums, :class_name => "Forum", :foreign_key => "parent_id"
   belongs_to :parent, :class_name => "Forum"
-  has_many :threads
+  has_many :topics
   
   #scopes
   scope :without_parent, where('forums.parent_id IS NULL')

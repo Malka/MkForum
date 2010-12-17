@@ -45,11 +45,11 @@ describe ForumsController do
   end
   describe "show" do
     before(:each) do
-      @thread = Factory(:thread, :forum_id => @forum)
+      @thread = Factory(:topic, :forum_id => @forum)
     end
     it "should show all threads" do
       get :show, :id => @forum
-      response.should have_selector('td', :content => @thread.name)
+      response.should have_selector('td', :content => @thread.title)
     end
   end
 end

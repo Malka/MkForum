@@ -19,6 +19,6 @@ describe Forum do
   end
   it "should have threads" do
     forum = Forum.new(@attr)
-    forum.should respond_to(:threads)
+    forum.should respond_to(:topics)
   end
 end
