@@ -1,0 +1,11 @@
+<table class="post">
+		<% unless post.title.blank? %>
+		<tr>
+			<th colspan="2" class="title" ><%= post.title %> </th>
+		</tr>
+		<% end %>
+		<tr>
+			<td class="user_content">Auteur + avatar</td>
+			<td><%= simple_format post.content %> </td>
+		</tr>
+		</table>

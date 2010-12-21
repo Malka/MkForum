@@ -1,0 +1,12 @@
+<table class="forum round">
+	<tr class="header">
+		<th class="description"> Discussion </th>
+		<th> Posts </th>
+		<th class="last_post"> Last post </th>
+	<% for topic in forum.topics %>
+	<tr>
+		<td class="description <%= last?(topic, forum.topics) %>"><%= link_to topic.title, topic %> </td>
+		<td class="posts"><%= topic.posts.count %></td>
+		<td class="last_post <%= last?(topic, forum.topics) %>" ></td>
+	<% end %>
+</table>

@@ -1,0 +1,8 @@
+<%= render 'shared/path', :forum => @forum %>
+
+<nav class="actions answer round">
+	<%= link_to "Answer", new_topic_post_path(@topic) %>
+</nav>
+<% for post in @topic.posts %>
+	<%= render 'post', :post => post  %>
+<% end %>
