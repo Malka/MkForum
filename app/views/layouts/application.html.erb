@@ -15,10 +15,9 @@
 	<% flash.each do |key, value |%>
 		<div class="flash <%= key %>"> <%= value %> </div> 
 		<% end %>
-	
 		<%= yield %>
 	</section>
-	<footer>
+	<footer class="round">
 		<%= render 'layouts/footer' %>
 	</footer>
 </div>

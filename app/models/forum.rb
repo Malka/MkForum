@@ -1,12 +1,12 @@
 # == Schema Information
-# Schema version: 20101216231324
+# Schema version: 20101217194341
 #
 # Table name: forums
 #
 #  id          :integer(4)      not null, primary key
 #  name        :string(255)
 #  parent_id   :integer(4)
-#  actif       :boolean(1)
+#  actif       :boolean(1)      default(TRUE)
 #  created_at  :datetime
 #  updated_at  :datetime
 #  description :string(255)

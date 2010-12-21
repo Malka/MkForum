@@ -8,12 +8,14 @@ module ApplicationHelper
   end
 
   def logo
-    image_tag 'logo.png', :title => 'logo'
+    link_to(image_tag('logo.png', :title => 'logo'), root_path)
   end
 
-  def path(forum)
+  def path(forum, thread = nil)
     path = Array.new 
-    #path << link_to('Board index', forums_path)
+    if thread
+      path << link_to(thread.title, [thread.forum, thread])
+    end
     if (forum && forum.respond_to?(:parent))
       while(forum.parent)
         path << link_to(forum.name, forum)
@@ -21,8 +23,8 @@ module ApplicationHelper
       end
     end
     path.reverse!
-    path.insert(0, link_to('Board index', forums_path))
-    return path.join(' < ')
+    path.insert(0, link_to('Board index', root_path))
+    return path.join(' > ')
   end
   
   def admin?

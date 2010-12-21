@@ -11,15 +11,18 @@ class ForumsController < ApplicationController
 
     def new
       @forum = Forum.new
+      @submit = "Create"
     end
     
     def edit
-      @forum.find(params[:id])
+      @submit = "Update"
+      @forum = Forum.find(params[:id])
     end
     
     def update
       @forum = Forum.find(params[:id])
       if(@forum.update_attributes(params[:forum]))
+        flash[:success] = "Forum Successfully updated.."
         redirect_to forums_path
       else
         render 'edit'

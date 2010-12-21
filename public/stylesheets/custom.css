@@ -1,6 +1,13 @@
+/* @override http://localhost/stylesheets/custom.css?1292847294 */
+
+/* @override 
+	http://127.0.0.1:3000/stylesheets/custom.css?1292718202
+	http://127.0.0.1:3000/stylesheets/custom.css?1292770909
+*/
+
 body
 {
-	background-color: lightblue;
+	background-color: #ffebcc;
 }
 
 header
@@ -13,7 +20,7 @@ section
 	margin-top: 1em;
 	font-size: 120%;
 	padding:20px;
-	background:#fff;
+	background:ffebcc;
 }
 
 table
@@ -24,9 +31,9 @@ table
 nav
 {
 	float:right;
-	background-color: white;
 	padding: 0 0.7em;
 	white-space:nowrap;
+	background-color: #ffbbaa;
 }
 
 nav ul
@@ -36,9 +43,28 @@ nav ul
 
 nav#path
 {
-	float:left;
+	float: left;
 	margin-bottom:10px;
+	background-color: #ffbbaa;
+	font-size: 15px;
+	padding: 10px;
+	font-weight: normal;
+	font-style: normal;
 }
+
+
+nav.answer 
+{
+	float: right;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#path a 
+{
+	color: black;
+}
+
 
 nav ul li
 {
@@ -76,6 +102,7 @@ a:visited
 
 div.field, div.actions
 {
+	clear: both;
 	margin-bottom: 10px;
 }
 
@@ -144,7 +171,7 @@ div.field, div.actions
 /* forum list */
 tr.header
 {
-	background-color: #513BDD;
+	background-color: maroon;
 	color:white;
 	border-top-left-radius:10px;
 }
@@ -163,18 +190,20 @@ tr.header
 th.description
 {
 	border-top-left-radius:10px;
+	width: 50%;
+	height: 10px;
 }
 
 th.last_post
-{
-	border-top-right-radius:10px;
+{	border-top-right-radius:10px;
+	width: 40%;
 }
 
-td.description_last
+td.description.last
 {
 	border-bottom-left-radius:10px;
 }
-td.last_post_last
+td.last_post.last
 {
 	border-bottom-right-radius:10px;
 }
@@ -186,7 +215,7 @@ td.description
 
 tr.forum td
 {
-	background-color: #9FBAF2 !important;
+	background-color: #ffb18d !important;
 }
 
 .forum tr td, .forum tr th
@@ -197,4 +226,16 @@ tr.forum td
 	padding-left:1em;
 }
 
+.forum tr td
+{
+	background-color: #ffb18d !important;
+}
+
 /* end forum list */
+
+/*posts */
+
+.user_content
+{
+	width:100px;
+}

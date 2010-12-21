@@ -1,6 +1,16 @@
 RailsBB::Application.routes.draw do
   
-  resources :forums  
+  get "posts/new"
+
+  resources :forums do
+    resources :topics
+  end
+  
+  resources :topics do
+    resources :posts
+  end
+  
+  root :to => 'forums#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

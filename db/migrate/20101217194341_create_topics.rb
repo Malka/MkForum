@@ -4,7 +4,6 @@ class CreateTopics < ActiveRecord::Migration
       t.integer :author_id
       t.integer :forum_id
       t.string :title
-      t.text :content
 
       t.timestamps
     end

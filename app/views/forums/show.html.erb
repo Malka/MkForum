@@ -2,3 +2,6 @@
 <% if @forum.forums.any? %>
 	<%= render 'forum', :forum => @forum %>
 <% end %>
+<% if @forum.topics.any? %>
+	<%= render 'topic', :forum => @forum %>
+<% end %>

@@ -8,13 +8,13 @@
 	<% if !forum.forums.blank? %>
 	  <% for subforum in forum.forums %>
 	    <tr class="forum round">
-			<td class="description description_<%= last?(subforum, forum.forums) %>"> 
+			<td class="description <%= last?(subforum, forum.forums) %>"> 
 				<%= link_to subforum.name, subforum %>  <br />
 				<%= subforum.description %>
 			</td>
-			<td class="threads"></td>
+			<td class="threads"> <%= subforum.topics.count%></td>
 			<td class="posts"></td>
-			<td class="last_post last_post_<%= last?(subforum, forum.forums) %>"></td>
+			<td class="last_post <%= last?(subforum, forum.forums) %>"></td>
 		</tr>
 	  <% end %>
 	<% end %>
