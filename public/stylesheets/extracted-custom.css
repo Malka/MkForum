@@ -220,7 +220,7 @@ tr.forum td
 	background-color: #ffb18d !important;
 }
 
-.forum tr td, .forum tr th
+.forum tr td, .forum tr th, .post tr td, .post tr th
 {
 	border-right: 1px solid white;
 	border-bottom:1px solid #E17984;
@@ -228,7 +228,7 @@ tr.forum td
 	padding-left:1em;
 }
 
-.forum tr td
+.forum tr td, .post tr td
 {
 	background-color: #ffb18d !important;
 }
@@ -246,6 +246,13 @@ tr.forum td
 {
 	width:100px;
 }
+
+.post tr th
+{
+	background-color: rosybrown;
+}
+
+/* footer */
 
 footer 
 {

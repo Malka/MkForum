@@ -1,9 +1,7 @@
-/* @override http://localhost/stylesheets/custom.css?1292847294 */
-
-/* @override 
-	http://127.0.0.1:3000/stylesheets/custom.css?1292718202
-	http://127.0.0.1:3000/stylesheets/custom.css?1292770909
-*/
+table.post tr td 
+{
+	background-color:#ffbbaa ;	
+}
 
 body
 {
