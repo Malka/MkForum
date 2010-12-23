@@ -8,4 +8,7 @@
 			<td class="user_content">Auteur + avatar</td>
 			<td><%= simple_format post.content %> </td>
 		</tr>
+		<tr>
+			<td colspan='2'>Posted <%= (post.created_at.to_formatted_s(:long)) %> </td>
+		</tr>
 		</table>
