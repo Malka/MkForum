@@ -6,7 +6,7 @@
 		<% end %>
 		<tr>
 			<td class="user_content">Auteur + avatar</td>
-			<td><%=raw  (post.content.bb_to_html) %> </td>
+			<td><%=raw  simple_format(post.content.bb_to_html) %> </td>
 		</tr>
 		<tr>
 			<td colspan='2'>Posted <%= (post.created_at.to_formatted_s(:long)) %> </td>
