@@ -6,7 +6,8 @@
 	</div>
 	<div class="field">
 		<%= f.label :content %> <br />
-		<%= f.text_area :content %>
+		<%= f.text_area :content, :class =>"mceEditor" %>
+		<a href="#" onclick="tinyMCE.execCommand('mceToggleEditor',false,'topic_content');">[Toggle WYSIWYG]</a>
 	</div>
 	<div class="actions">
 		<%= f.submit @submit %>	

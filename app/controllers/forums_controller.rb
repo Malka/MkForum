@@ -1,6 +1,6 @@
 class ForumsController < ApplicationController
-    
     before_filter :admin?, :only => [:new, :edit, :update, :create]
+    uses_tiny_mce
     def index
       @forums = Forum.without_parent
     end

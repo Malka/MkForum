@@ -8,7 +8,7 @@ module ApplicationHelper
   end
 
   def logo
-    link_to(image_tag('logo.png', :title => 'logo'), root_path)
+    (link_to(image_tag('logo.png', :title => 'logo'), root_path))
   end
 
   def path(forum, thread = nil)
